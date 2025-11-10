@@ -22,6 +22,7 @@ def save_data(data):
 def update_data(data):
     data_dict = {}
     for index, el in enumerate(data):
+        el['homeworld'] = send_req(el['homeworld'])['name']
         data_dict[index] = el
     return data_dict
 

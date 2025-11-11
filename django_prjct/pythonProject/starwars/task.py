@@ -27,7 +27,6 @@ def update_data(data):
         data_dict[index] = el
     return data_dict
 
-
 def main():
     data = parse()
     data = update_data(data)
@@ -36,6 +35,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 

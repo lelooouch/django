@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def send_req(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -36,5 +37,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 

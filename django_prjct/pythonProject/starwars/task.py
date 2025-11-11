@@ -20,7 +20,6 @@ def save_data(data):
     with open('data.json', mode = 'w', encoding='utf-8') as file:
         json.dump(data, file)
 
-
 def update_data(data):
     data_dict = {}
     for index, el in enumerate(data):
@@ -37,6 +36,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 

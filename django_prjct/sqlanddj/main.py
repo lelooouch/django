@@ -42,7 +42,7 @@ cur = con.cursor()
 
 cur.executescript('''
 CREATE TABLE IF NOT EXISTS characters(
-    id INTEGER,
+    id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     height INTEGER,
     mass INTEGER,
@@ -57,4 +57,5 @@ CREATE TABLE IF NOT EXISTS characters(
 cur.executemany('INSERT INTO characters VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?);', data)
 
 con.commit()
+
 con.close()

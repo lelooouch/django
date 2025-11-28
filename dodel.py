@@ -17,7 +17,6 @@ import json
 #             data_list.append(data)
 #     return data_list
 
-
 # def save_data(data):
 #     with open('data.json', mode = 'w', encoding='utf-8') as file:
 #         json.dump(data, file)

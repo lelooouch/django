@@ -28,7 +28,6 @@ import json
 #         data_dict[index] = el
 #     return data_dict
 
-
 # def main():
 #     data = parse()
 #     data = update_data(data)
